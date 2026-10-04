@@ -1,0 +1,26 @@
+<!--
+  FITCOACH — GHL FUNNEL FULL-WIDTH HEAD CODE
+  Paste this into: Funnel → Settings → Head Tracking Code
+  (or Website → Settings → Custom Code → Head)
+  This is the ONLY reliable way to make a Funnel truly edge-to-edge when
+  Custom HTML <script> is stripped in preview. Keep the main FitCoach
+  Custom HTML paste as well — this head code unlocks the container.
+-->
+<style data-ghl-head-unwrap="true">
+  html, body { overflow-x: hidden !important; max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
+  /* Funnel builder containers — force full width */
+  .hl_page-preview, .page-preview, .funnel-preview,
+  .container, .container-fluid, .container-xl, .container-lg,
+  .row, [class*="col-"], [class*="col"], [class*="column"], [class*="wrapper"],
+  section, .section, [class*="section"] {
+    max-width: none !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    box-sizing: border-box !important;
+  }
+</style>
